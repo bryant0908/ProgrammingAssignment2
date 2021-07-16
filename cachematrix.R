@@ -26,7 +26,7 @@ cacheSolve <- function(x, ...) {
   return(b)  
   }
   mat <- x$get()
-  d <- solve(mat,...) ## computes for the inverse of the matrix
+  b <- solve(mat,...) ## computes for the inverse of the matrix
   x$setInverse(b) ## saves the inversed matrix
   b
 }
